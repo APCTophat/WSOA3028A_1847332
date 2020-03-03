@@ -8,3 +8,6 @@ function wat(thingy){
 }
 
 wat(2);
+
+const button = document.body.children[1];
+console.log(button);
