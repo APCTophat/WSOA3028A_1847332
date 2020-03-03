@@ -9,7 +9,7 @@ function wat(thingy){
 
 wat(2);
 
-const button = document.body.children[1];
+const button = document.children[0];
 console.log(button);
 
 button.addEventListener('click', function(){
