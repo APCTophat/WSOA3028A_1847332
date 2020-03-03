@@ -12,7 +12,7 @@ wat(2);
 const button = document.body.children[1];
 console.log(button);
 
-button.addEventListener('click', function(e){
+button.addEventListener('click', function(){
     const el = document.createElement('em');
     el.innerText('Something');
     document.body.appendChild(el);
