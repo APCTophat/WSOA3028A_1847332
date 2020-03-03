@@ -1,4 +1,10 @@
-function myFunction(a,b){
-    return a *b;
+let c = 1.01 + 2.02;
+//c = 3.03
+console.log(c);
+
+function wat(thingy){
+    console.log('wat'+ thingy);
+
 }
-myFunction(10,2);
+
+wat(2);
