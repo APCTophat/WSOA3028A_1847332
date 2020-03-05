@@ -1,5 +1,3 @@
-
-
 const button = document.querySelector('button');
 const article = document.querySelector('article');
 
