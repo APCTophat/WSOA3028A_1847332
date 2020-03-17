@@ -1,8 +1,4 @@
-const button = document.querySelector('button');
-const article = document.querySelector('article');
+let blogArchiveButton = document.getElementsByClassName("blog_archive_button")[0];
+blogArchiveButton.addEventListener('click', function(){location.href = "development-blogs/blog-archive.html";});
 
-button.addEventListener('click', function(){
-    const el = document.createElement('em');
-    el.innerText = 'something';
-    article.prepend(el);
-})
+
