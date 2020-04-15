@@ -24,3 +24,6 @@ blogMicroformats.addEventListener('click', function(){location.href="blog-archiv
 
 let blogTheGreatReformat = document.getElementsByClassName("to_development_blog")[7];
 blogTheGreatReformat.addEventListener('click', function(){location.href="blog-archive/blog-2020-03-16/blog-the-great-reformat.html";});
+
+let blogStockPhoto = document.getElementsByClassName("to_development_blog")[8];
+blogStockPhoto.addEventListener('click', function(){location.href="blog-archive/blog-2020-04-06/blog-stock-photos.html";});
