@@ -27,3 +27,6 @@ blogTheGreatReformat.addEventListener('click', function(){location.href="blog-ar
 
 let blogStockPhoto = document.getElementsByClassName("to_development_blog")[8];
 blogStockPhoto.addEventListener('click', function(){location.href="blog-archive/blog-2020-04-06/blog-stock-photos.html";});
+
+let blogInfoGeo = document.getElementsByClassName("to_development_blog")[9];
+blogInfoGeo.addEventListener('click', function(){location.href="blog-archive/blog-2020-04-20/blog-informational-geography.html";});
