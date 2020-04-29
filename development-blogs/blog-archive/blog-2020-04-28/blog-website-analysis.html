@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Carvalho">
+    <meta name="description" content="A blog post of me looking into another website to see how they did things">
+    <script  src= "../back-to-archive.js" type="module" async></script>
+    <title>Development Blog:28/04/2020</title>
+</head>
+<body>
+    <header><br><button class="back_to_blog_archive">Back to Archive</button></header>
+    <br>
+<article class="h-entry">
+    <h2 class="p-name">Dissecting another website to learn</h2>
+    <h4>for learning and blatent thievery</h4>
+    <p class="p-author">Posted by Alex Carvalho on <time class="dt-published" datetime="28/04/2020">the 28<sup>th</sup> April 2020</time></p>
+    <p>
+        This is the website <a href="https://sointeractive.co.za/">SoInteractive</a>. I decided to investigate their website because I just personally liked it and their style. Not surprising they are a company that specialises in providing website for other companies. Bonus they are located right here in Johannesburg. I also saw it as a good way to learn from the work of people who specialise in making good websites.
+        So firstly, when I say “Investigate” what I mean by this is looking at how the website functions as well as using chromes inspector dev tool (F12). This means I do not actually know how the website functions, but I can make some assumptions. Looking at a website this way feels like finding dinosaur bones, where looking at the website’s bones should give me enough information to figure out how it moved, what it looked like or what it ate. It the best peek behind the curtain I can get. 
+        <br><br>
+        I wanted to specifically look at how they presented their work to their viewers. I loved the big hexagons that changed colours when hovered over. I just found it appealing:
+        <br><br>
+        <img src="../../blog-photo-archive/SoInt-FullPage.png" alt="ScreenShot of SoInteractive website" style="width:512px;height:275px;">
+        <br><br>
+       
+        Investigating this allowed me to make some sense on how I could replicate this feature in my own website. I broke these down into steps.
+        <li>Each row is its own DIV class that contains smaller DIV’s that contain the images</li>
+        <li>These smaller DIV’s have a class of their own that indicates where in the row they fall</li>
+        <li>Then these DIV’s contain an image and a reference and a black and white image</li>
+        <li>Finally, the reference contains a coloured version of the same image to be displayed when the mouse is hovering over it.</li>
+        <br><br>
+
+        I took these screenshots to indicate the steps:
+        <br><br>
+        <img src="../../blog-photo-archive/SoInt-LargeDiv.png" alt="ScreenShot of SoInteractive website" style="width:866px;height:275px;">
+        <img src="../../blog-photo-archive/SoInt-SmallDiv.png" alt="ScreenShot of SoInteractive website" style="width:866px;height:275px;">
+        <img src="../../blog-photo-archive/SoInt-InDivImage.png" alt="ScreenShot of SoInteractive website" style="width:866px;height:275px;">
+        <br><br>
+        Since I am just looking at the skeleton of how this is set up I do not know how it all works or functions through Java Script but I believe that is something I could figure out on m own. I found this method quite brilliant when looking at it. I was wondering how they got the images to overlap but it just turned out to be square images with a hexagon image of what ever they wanted to show in it, with the rest being alpha. Then they overlapped the images to create the stacking effect. This means they are still working in the square restrictions of web design but tricking the user that these images are not square. Then changing between a coloured version and a black and white version of the same image on mouse hover is such a simple technique that is so effective. How they do a fade transition is probably buried in some java code, but I could probably find a way to do that. 
+        <br><br>
+        
+        I wanted to try and mimic this method because I want to style “Dennis Scott’s” posts like this to make it more appealing. My attempt at replicating this method should be here (hopefully):
+        
+        
+    </p>
+</article>
+    
+</body>
+</html>

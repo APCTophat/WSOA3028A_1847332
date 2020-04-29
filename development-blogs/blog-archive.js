@@ -30,3 +30,6 @@ blogStockPhoto.addEventListener('click', function(){location.href="blog-archive/
 
 let blogInfoGeo = document.getElementsByClassName("to_development_blog")[9];
 blogInfoGeo.addEventListener('click', function(){location.href="blog-archive/blog-2020-04-20/blog-informational-geography.html";});
+
+let blogWebsiteAnalysis = document.getElementsByClassName("to_development_blog")[10];
+blogWebsiteAnalysis.addEventListener('click', function(){location.href="blog-archive/blog-2020-04-28/blog-website-analysis.html";});
