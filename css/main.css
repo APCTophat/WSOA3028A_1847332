@@ -4,7 +4,7 @@ body{
     margin: 0;
     font:12px system-ui;
 }
-
+/* the larget container for the whole webpage*/
 .container{
     display: grid;
     grid-template-columns: [Start] 5% [line2 setting-start] 25% [line3 setting-end] 5% [line4 posts-start] 60% [line5 post-end] 5% [end];
@@ -15,7 +15,7 @@ body{
     margin-right: auto;
     justify-content: center;
   
-  
+  /*Profile, Navigation and Content are the three areas to work in*/
 }
 .Profile{
 
@@ -27,7 +27,6 @@ body{
     grid-template-columns: 27.5% 72.5%;
     text-align: center;
 }
-
 .Navigation{
     grid-column: line2 / line3;
     grid-row: row-4 / row-5;
@@ -38,6 +37,15 @@ body{
     grid-auto-rows: row;
 
 }
+.Content{
+    grid-column-start: line4;
+    grid-column-end: line5;
+    grid-row-start: row-4;
+    grid-row-end: row-5;
+    background-color: darkslategray;
+    font-size: 40px;
+}
+
 
 .Navigation > h4{
    padding: 0;
@@ -49,15 +57,10 @@ body{
    
     background-color: rgb(170, 170, 170);
 }
-.Content{
-    grid-column-start: line4;
-    grid-column-end: line5;
-    grid-row-start: row-4;
-    grid-row-end: row-5;
-    background-color: darkslategray;
-    font-size: 40px;
-}
 
+.Navigation > .button{
+    background-color: red;
+}
 
 .Profile_photo{
     place-self: center;
