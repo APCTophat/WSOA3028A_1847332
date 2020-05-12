@@ -10,7 +10,7 @@ body{
     grid-template-columns: [Start] 5% [line2 setting-start] 25% [line3 setting-end] 5% [line4 posts-start] 60% [line5 post-end] 5% [end];
     grid-template-rows: [row-start] 40px [row-2 profile-start] 80px [row-3 profile-start] 40px [row-4 post-start] 500px [row-5 post-end] 40px [row-end];
     background-color: cadetblue;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -37,6 +37,17 @@ body{
     display: grid;
     grid-auto-rows: row;
 
+}
+
+.Navigation > h4{
+   padding: 0;
+   margin: auto;
+   
+}
+
+.Navigation > button:hover{
+   
+    background-color: rgb(170, 170, 170);
 }
 .Content{
     grid-column-start: line4;
