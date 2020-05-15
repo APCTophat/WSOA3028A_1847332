@@ -1,6 +1,3 @@
-let backToHomeButton = document.getElementsByClassName("back_to_homepage")[0];
-backToHomeButton.addEventListener('click',function(){location.href = "../index.html";});
-
 let blogWebsiteExplination = document.getElementsByClassName("to_development_blog")[0];
 blogWebsiteExplination.addEventListener('click', function(){location.href="blog-archive/blog-2020-02-01/blog-website-explination.html";});
 
