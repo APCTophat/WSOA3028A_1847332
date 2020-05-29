@@ -15,7 +15,7 @@ header{
     height: 100%;  
     flex-grow: 1;
 }
-.Profile{
+.Home{
     background-color:#5c76ea;
     height: 100%;
     width: 20%;
@@ -23,15 +23,17 @@ header{
     align-items: center;
     justify-content: space-around;
     
+    
 }
-.Profile:hover{
+.Home:hover{
     background-color:#5CEAD0 ;
 }
-.Profile a{
+.Home a{
     padding: 0;
     margin: 0;
     font-size: 3vw;  
     text-decoration: none;
+    color: black;
 }
 
 
@@ -76,11 +78,6 @@ header{
     align-self: flex-end;
 }
 
-.Nav > ul .button:hover{
-    color: ghostwhite;
-   
-}
-
 li:hover > ul{
     position: absolute;
     display: block;
@@ -88,9 +85,16 @@ li:hover > ul{
     background-color: #5CEAD0;
     text-align: right;
     float: left;
+   
 }
 
 .Nav ul li ul li{
         padding: 5px;
+        font-size: 2vw;
+        
 }
 
+.Nav ul li ul li:hover{
+    background-color: rgb(74, 192, 170);
+   
+}
