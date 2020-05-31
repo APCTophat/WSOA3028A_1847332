@@ -1,7 +1,7 @@
 html, body{
     padding: 0;
     margin: 0;
-    font:12px system-ui;
+    font:14px system-ui;
     background-color:#5CBDEA;
     font-family: Arial;
     width: 100%;
@@ -34,7 +34,7 @@ html, body{
 .Post_Container{
     display: grid;
     height: 40;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 80%;
 }
 
 .Post_Container > div{

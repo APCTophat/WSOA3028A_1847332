@@ -13,3 +13,9 @@ post2020April21.addEventListener('click', function(){location.href = "post-archi
 
 let post2020May08 = document.getElementsByClassName("to_scotts_posts")[4];
 post2020May08.addEventListener('click', function(){location.href = "post-archive/post-2020-05-08/post-2020-05-08.html"})
+
+let post2020May23 = document.getElementsByClassName("to_scotts_posts")[5];
+post2020May23.addEventListener('click', function(){location.href = "post-archive/post-2020-05-23/post-2020-05-23.html"})
+
+let post2020May30 = document.getElementsByClassName("to_scotts_posts")[6];
+post2020May30.addEventListener('click', function(){location.href = "post-archive/post-2020-05-30/post-2020-05-30.html"})
