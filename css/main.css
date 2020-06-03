@@ -8,6 +8,13 @@ html, body{
     min-height: 100%;
 }
 
+p{
+    padding-left: 2%;
+}
+li{
+    padding-left: 2%;
+}
+
 .Archive_Container{
  display: flex;
  justify-content: center;

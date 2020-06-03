@@ -30,3 +30,9 @@ blogInfoGeo.addEventListener('click', function(){location.href="blog-archive/blo
 
 let blogWebsiteAnalysis = document.getElementsByClassName("to_development_blog")[10];
 blogWebsiteAnalysis.addEventListener('click', function(){location.href="blog-archive/blog-2020-04-28/blog-website-analysis.html";});
+
+let SMI = document.getElementsByClassName("to_development_blog")[11];
+SMI.addEventListener('click', function(){location.href="blog-archive/blog-2020-06-01/blog-SMI.html";});
+
+let TechPower = document.getElementsByClassName("to_development_blog")[12];
+TechPower.addEventListener('click', function(){location.href="blog-archive/blog-2020-06-03/blog-technology-power-relationship.html";});
