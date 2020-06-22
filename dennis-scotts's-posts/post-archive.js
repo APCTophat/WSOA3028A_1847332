@@ -34,3 +34,15 @@ post2020June1.style.cursor = "pointer";
 let post2020June2 = document.getElementsByClassName("to_scotts_posts")[8];
 post2020June2.addEventListener('click', function(){location.href = "post-archive/post-2020-06-02/post-2020-06-02.html"})
 post2020June2.style.cursor = "pointer";
+
+let post2020June16 = document.getElementsByClassName("to_scotts_posts")[9];
+post2020June16.addEventListener('click', function(){location.href = "post-archive/post-2020-06-16/post-2020-06-16.html"})
+post2020June16.style.cursor = "pointer";
+
+let post2020June18 = document.getElementsByClassName("to_scotts_posts")[10];
+post2020June18.addEventListener('click', function(){location.href = "post-archive/post-2020-06-18/post-2020-06-18.html"})
+post2020June18.style.cursor = "pointer";
+
+let post2020June25 = document.getElementsByClassName("to_scotts_posts")[11];
+post2020June25.addEventListener('click', function(){location.href = "post-archive/post-2020-06-25/post-2020-06-25.html"})
+post2020June25.style.cursor = "pointer";
