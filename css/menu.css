@@ -51,7 +51,7 @@ header{
 .Nav:hover{
     background-color:#5CEAD0;
 }
-.nav > ul{
+.Nav > ul{
     position: relative;
 }
 .Nav ul{    /*the entire nav list*/
@@ -84,7 +84,7 @@ header{
 li:hover > ul{
     position: absolute;
     display: block;
-    width: 31vw;
+    width: 100%;
     background-color: #5CEAD0;
     text-align: right;
     float: left;

@@ -48,17 +48,22 @@ li{
    height: 100%;
    width: 100%;
    text-align: center;
+   background-color: #5c76ea;
 }
 
+.Post_Container > div > p{
+    margin-bottom: 0%;
+}
 .Post_Container img:hover{
     background-color: #5CEAD0;
 }
 .Post_Container p{
-    font-size: large;
+    font-size: calc(6px + 1vw);
 }
 .Post_Container img{
     padding: 5%;
-    max-height: 90%;
-   max-width: 90%;
+    max-height: 80%;
+    max-width: 80%;
+   
 }
 
