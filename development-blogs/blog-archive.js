@@ -49,3 +49,7 @@ blogSMI.style.cursor = "pointer";
 let blogTechPower = document.getElementsByClassName("to_development_blog")[12];
 blogTechPower.addEventListener('click', function(){location.href="blog-archive/blog-2020-06-03/blog-technology-power-relationship.html";});
 blogTechPower.style.cursor = "pointer";
+
+let blogInternetTruth = document.getElementsByClassName("to_development_blog")[13];
+blogInternetTruth.addEventListener('click', function(){location.href="blog-archive/blog-2020-06-27/blog-Internet-and-Truth.html";});
+blogInternetTruth.style.cursor = "pointer";
