@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/API.css">
     <script type="module" src="../API/API.js"></script>
-    <title>API help</title>
+    <title>API Help</title>
 </head>
 <body>
     <header>
@@ -52,15 +52,25 @@
     </p>
     <article Class="RandomImage">
         <article class="RandomImage_Container">
-            <div class="ButtonTitle">
-                <a class="GetImageButton">Load Image</a>
-            </div>
+            <form id="TheForm">
+                Key Word/s
+                <input type="text" name="InputName">
+                <input type="text" name="InputName">
+                <input type="text" name="InputName">
+                
+            </form>
+            <button class="TheButton">Load Image</button>
+            
+           
             <div class="RandomImage_Image">
-                <img class="ranImage" src="../dennis-Scott-stock-photos/stock-photo-dog-in-medical-mask-for-quarantine-1671032767.jpg">
+                <img class="ranImage" src="">
                 
             </div>
+            <button class="TheNextButton">Next</button>
+            <button class="ThePreviousButton">Previous</button>
             <div class="ImageDecription">
-                <p class="Image_Information">The image discription</p>
+                <p class="Image_Information">The image description</p>
+                <p class="Image_Count"></p>
             </div>
         </article>
     </article>
