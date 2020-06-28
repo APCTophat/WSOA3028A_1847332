@@ -61,7 +61,7 @@ loadImageButton.addEventListener('click',function(){
         a.innerHTML = ImageDetails.url; 
         document.querySelector(".Image_Information").appendChild(a);*/
 
-        document.querySelector(".Image_Information").innerHTML += '<a href="'+ImageDetails.url+'" target="blank" >link</a>' 
+      /*  document.querySelector(".Image_Information").innerHTML += '<a href="'+ImageDetails.url+'" target="blank" >link</a>' */
 
        /* document.querySelector(".Image_Information").innerHTML += 'Link'.link(ImageDetails.url); */  /*
     }; 
