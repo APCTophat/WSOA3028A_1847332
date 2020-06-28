@@ -16,7 +16,7 @@ const handleChuck = (chuckDetails) => {
 
 console.log('Should be first');
 */
-let loadImageButton = document.getElementsByClassName("GetImageButton")[0];
+let loadImageButton = document.getElementsByClassName("ButtonTitle")[0];
 loadImageButton.addEventListener('click',function(){
 
     fetch("http://www.splashbase.co/api/v1/images/random")
@@ -30,7 +30,16 @@ loadImageButton.addEventListener('click',function(){
 
     const RandomImage = (ImageDetails) => {
         document.querySelector(".ranImage").src = ImageDetails.url
-        document.querySelector(".Image_Information").innerText = ImageDetails.url
+        document.querySelector(".Image_Information").innerText = 'Image Link' + '' 
+
+        /*var a = document.createElement('a');
+        a.setAttribute('href',ImageDetails.url);
+        a.innerHTML = ImageDetails.url; 
+        document.querySelector(".Image_Information").appendChild(a);*/
+
+        document.querySelector(".Image_Information").innerHTML += '<a href="'+ImageDetails.url+'" target="blank" >link</a>' 
+
+       /* document.querySelector(".Image_Information").innerHTML += 'Link'.link(ImageDetails.url); */
     };    
 });
 loadImageButton.style.cursor = "pointer";

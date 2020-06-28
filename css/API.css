@@ -1,61 +1,61 @@
 .RandomImage{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+  
+    background-color: chartreuse;
+  
 }
 
 .RandomImage_Container{
     display: grid;
-    grid-gap: 1%;
-    width: 40%;
+    align-self: center;
+    max-width: 60vw;
+    
     padding: 5%;
+    background-color: chocolate;
+    
 }
 
 .RandomImage_Container a{
-    text-align: center;
-    font-size: 2rem;
+    font-size: calc(12px + 1vw);
+    font-display: auto;
 }
 
 .RandomImage_Container div{
     text-align: center;
-    font-size: 1.5rem;
+   
    
 }
 
 .RandomImage_Container img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50vw;
+    max-height: 50vh;
 }
 
-.RandomImage_Image p{
-    text-align: start;
-}
-.RandomImage_Image li{
-    text-align: start;
-}
-
-.Post_Photo{
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  
-}
-
-.Post_Photo img{
-   
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.GetImageButton{
+.ButtonTitle{
     background-color: #5c76ea;
     min-height: 10vh;
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    
+}
+.ButtonTitle:hover{
+    background-color: #5CEAD0;
 }
 
-.GetImageButton:hover{
-    background-color: #5CEAD0;
+.GetImageButton{
+    width: 100%;
+}
+
+
+
+
+.Image_Information{
+    font-size: calc(6px + 1vw);
+    max-width: 60vh;
+    overflow-wrap: break-word;
+    padding: 0;
+    margin: auto;
+
 }
