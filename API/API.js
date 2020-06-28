@@ -20,7 +20,7 @@ let loadImageButton = document.getElementsByClassName("ButtonTitle")[0];
 loadImageButton.addEventListener('click',function(){
 
     /*http://www.splashbase.co/api/v1/images/search?query=>Dog */
-    fetch("http://www.splashbase.co/api/v1/images/search?query=>laptop")
+    fetch("HTTPS://www.splashbase.co/api/v1/images/search?query=>laptop")
     .then(respones => respones.json())
     .then((LoadImage) => {
         console.log(LoadImage.images[1]);
@@ -33,14 +33,11 @@ loadImageButton.addEventListener('click',function(){
         document.querySelector(".ranImage").src = ImageDetails.url
         document.querySelector(".Image_Information").innerText = 'Image Link' + '' 
 
-        /*var a = document.createElement('a');
-        a.setAttribute('href',ImageDetails.url);
-        a.innerHTML = ImageDetails.url; 
-        document.querySelector(".Image_Information").appendChild(a);*/
+      
 
-        document.querySelector(".Image_Information").innerHTML += '<a href="'+ImageDetails.url+'" target="blank" >link</a>' 
+        document.querySelector(".Image_Information").innerHTML += '<a href="'+ImageDetails.url+'" target="blank" >link</a>'   
 
-       /* document.querySelector(".Image_Information").innerHTML += 'Link'.link(ImageDetails.url); */
+      
     };    
 
 
@@ -63,11 +60,12 @@ loadImageButton.addEventListener('click',function(){
         a.setAttribute('href',ImageDetails.url);
         a.innerHTML = ImageDetails.url; 
         document.querySelector(".Image_Information").appendChild(a);*/
-/*
+
         document.querySelector(".Image_Information").innerHTML += '<a href="'+ImageDetails.url+'" target="blank" >link</a>' 
 
        /* document.querySelector(".Image_Information").innerHTML += 'Link'.link(ImageDetails.url); */  /*
-    };   */
+    }; 
+    */  
 });
 loadImageButton.style.cursor = "pointer";
 
