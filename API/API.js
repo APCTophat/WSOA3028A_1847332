@@ -19,6 +19,7 @@ formButton.addEventListener('click', function(){
     PhotoCount = 0;
 
 });
+formButton.style.cursor = "pointer";
 
 let NextButton = document.getElementsByClassName("TheNextButton")[0];
 NextButton.addEventListener('click', function(){
@@ -30,6 +31,7 @@ NextButton.addEventListener('click', function(){
 
 
 });
+NextButton.style.cursor = "pointer";
 
 let PreviousButton = document.getElementsByClassName("ThePreviousButton")[0];
 PreviousButton.addEventListener('click', function(){
@@ -40,7 +42,7 @@ PreviousButton.addEventListener('click', function(){
     GetImageFunction(text1, text2, text3, PhotoCount);
 
 });
-
+PreviousButton.style.cursor = "pointer";
 function GetImageFunction(text1, text2, text3, PhotoCount){
     var url = new URL("https://pixabay.com/api/?key=17249747-a0b1849993e621cd83b0b32b8&q=" );
     var count = 0;
@@ -100,6 +102,9 @@ function GetImageFunction(text1, text2, text3, PhotoCount){
     } 
 }
     
+
+
+
 
 
 
