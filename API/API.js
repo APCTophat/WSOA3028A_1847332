@@ -20,7 +20,7 @@ let loadImageButton = document.getElementsByClassName("ButtonTitle")[0];
 loadImageButton.addEventListener('click',function(){
 
     /*http://www.splashbase.co/api/v1/images/search?query=>Dog */
-    fetch("HTTPS://www.splashbase.co/api/v1/images/search?query=>laptop")
+    fetch("https://www.splashbase.co/api/v1/images/search?query=>laptop")
     .then(respones => respones.json())
     .then((LoadImage) => {
         console.log(LoadImage.images[1]);
