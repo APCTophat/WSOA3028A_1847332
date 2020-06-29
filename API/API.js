@@ -93,7 +93,7 @@ function GetImageFunction(text1, text2, text3, PhotoCount){
 
         const RandomImage = (ImageDetails) => {
             document.querySelector(".ranImage").src = ImageDetails.largeImageURL;
-            document.querySelector(".Image_Information").innerHTML = '<a href="'+ImageDetails.largeImageURL+'" target="blank" >link</a>';
+            document.querySelector(".Image_Information").innerHTML = '<a href="'+ImageDetails.pageURL+'" target="blank" >link to the page</a>';
             
         }; 
     }  

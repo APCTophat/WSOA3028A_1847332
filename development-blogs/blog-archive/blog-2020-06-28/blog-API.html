@@ -24,6 +24,48 @@
     <div class="Post_Text">
         <p class="p-author">Posted by Alex Carvalho on <time class="dt-published" datetime="27/06/2020">the 28<sup>th</sup> June 2020</time></p>
 
+        
+        <h2>What is an API</h2>
+    <p>
+    An API (Application programming interface) is a communication interface for multiple software to communicate through. Software communicates through calls or requests that are pre-defined and will then receive information based off what was requested. Example: the user of a website will interact with the web client to log into their account. The client will then send a request to the server with the log in details of the user. The sever processes the parameters sent by the request and check the storage/an external service to check if these parameters are correct and certified. It will then send a response back to the web client either allowing or rejecting access based off the parameters sent. The web client and the sever communicated through a set of pre-defined parameters to determine if the person logging in had the correct credentials and what page to load them into. This is my understanding of what an API is and how they facilitate the communication between software programs.
+    </p>
+    <h2>Why use an API</h2>
+    <p>
+    A website with no API’s is a static entity that cannot communicate with other website. Any information or processes on the website is all a user has access to. A website cannot do it all, it requires the use of API’s to perform functions that would need to be done externally for either safety or performance reasons. So, API’s are used to perform the functions that a single website cannot do by itself. 
+    </p>
+    <p>
+    For my website I am using, and Image search API hosted by<a href="https://pixabay.com/" target="_blank" rel="noopener">Pixabay</a>. Since my website cannot store a catalogue of 100s of thousands of images that Dennis could use in his posts. I am using my website to gain access to their catalogue of images and bringing images, that fit the parameters, to my website. To do this the <i>Pixabay API</i> returns a JSON-encoded object that takes parameters such as:
+    </p>
+    <ul>
+        <li>Key (my specific access code after signing up)</li>
+        <li>q (Image query to find images that fit the query)</li>
+        <li>image_type (The type of images I want to get)</li>
+        <li>Ect</li>
+    </ul>
+    <p>
+    The entire list of parameters can be found on their<a href="https://pixabay.com/api/docs/" target="_blank" rel="noopener">API Documentation</a> but the ones I mentioned where the ones I mainly used. This means that I send a request with parameters of my code, the image query I want, and the image type I want. Pixabay’s severs processes my request and then sends back the result. If everything is correctly formatted, I would receive a JSON object that contains some <i>Response Keys</i>. It is these keys that my website then interacts with to get information from the response and display the image on my site. The entire list can also be found on the API document but the main ones I used were:
+    <ul>
+        <li>total (total number of images that fit my parameters returned)</li>
+    <li>largeImageURl (This is the scaled image that gets displayed, I used the large image as the standard image is inaccessible to me according to Pixabay)</li>
+    <li>pageURL (The url page on Pixabay that the image comes from. So that I can go the website page and download the image from there)</li>
+        <li>Ect</li>
+    </ul>
+
+    <h4>Why this API</h4>
+<p>
+Using this APi is necessary if I wanted to have this function on my website. Since I do not have an entire catalogue of photos to use nor the infrastructure on my website to sort through them to find a specific image. Therefore, using an API is the logical thing to do to incorporate this feature in my website. Why do I want this feature? I wanted this feature on my website as it was an appropriate API when considering Dennis’s character. He uses stock photo images because he cannot take photos of his own. He then makes posts using these images to build on his website. If “Dennis” could gain access to specific images off of his own website then he could directly incorporate that image into his website directly. I would have loved to have added a feature that meant after finding an image, I could press a button and a new post using that image is added to the website. This would make adding posts to the website far more efficient and more practical for dennis.
+</p>
+<h4>Technical Impact</h4>
+<p>
+The API does not run constantly and is only accessible through one page on my website through a button click. The API is not automatically called and Pixabay has put a 5000-request maximum per hour, so it cannot be run constantly which means it does not slow down my website constantly.    
+</p>
+
+<p>
+To make this API work I have three text boxes that can take a combined maximum of 100 characters (specified by Pixabay). The intention is that if I need to find a photo of a <i>dog</i>and a <i>cat</i> as <i>pets</i>, I can put those keywords in the input boxes. When I try and load an image the input text is added to the parameters of my request. If successful I should receive an array of 20 images that fit the search parameters. It is 20 by default and I left it at 20 as to not load too much to my website at once. I have also included a <i>Next</i> <i>Previous</i> button that will go through the array displaying the found photos. If the parameters return no photos, no photo will load, and the display counter will show 1/0 to indicate there is no array. Under the photos I have included a link to the page the photo came from so I could go to the website and download it if I wanted to.
+</p>
+<p>
+Overall, this API has a low technical impact on my website as it is limited to one page on the site as well as being only called through a user input. I would have liked it to have more of impact in terms of adding blog posts to my site but due to tie constraints I was unable to include that feature. I also would have liked to have the buttons be matching the style of the website, but I did not have time to do that. It also does not have a drastically negative technical impact on the website as it does not affect the function or speed of any other page on the site.  
+</p>
 
             
     </div>

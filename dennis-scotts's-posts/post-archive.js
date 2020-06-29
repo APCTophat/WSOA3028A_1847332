@@ -46,3 +46,7 @@ post2020June18.style.cursor = "pointer";
 let post2020June25 = document.getElementsByClassName("to_scotts_posts")[11];
 post2020June25.addEventListener('click', function(){location.href = "post-archive/post-2020-06-25/post-2020-06-25.html"})
 post2020June25.style.cursor = "pointer";
+
+let post2020June29 = document.getElementsByClassName("to_scotts_posts")[12];
+post2020June29.addEventListener('click', function(){location.href = "post-archive/post-2020-06-29/post-2020-06-29.html"})
+post2020June29.style.cursor = "pointer";
