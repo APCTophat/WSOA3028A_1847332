@@ -57,3 +57,7 @@ blogInternetTruth.style.cursor = "pointer";
 let blogAPI = document.getElementsByClassName("to_development_blog")[14];
 blogAPI.addEventListener('click', function(){location.href="blog-archive/blog-2020-06-28/blog-API.html";});
 blogAPI.style.cursor = "pointer";
+
+let blogAllStar = document.getElementsByClassName("to_development_blog")[15];
+blogAllStar.addEventListener('click', function(){location.href="blog-archive/blog-2020-07-10/blog-VlogBrothers.html";});
+blogAllStar.style.cursor = "pointer";
